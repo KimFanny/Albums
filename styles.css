@@ -1,0 +1,146 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.Header {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  border: solid 1px rgb(196, 123, 225);
+  margin-top: 20px;
+  height: 120px;
+  background-color: rgb(42, 42, 43);
+  color: rgb(246, 246, 239);
+  border-radius: 10px;
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+.title {
+  text-align: center;
+  align-items: center;
+}
+.img {
+  margin-left: 20px;
+}
+.icon-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 20px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  color: rgb(14, 14, 13);
+  background-color: rgb(246, 246, 239);
+  border-radius: 6px;
+  height: 40px;
+  width: 50px;
+}
+
+.card_singles {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  height: 350px;
+  width: 400px;
+  border: solid 1px black;
+  align-items: center;
+}
+.img-album {
+  height: 80px;
+  width: 100px;
+}
+.lista {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.nombre {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+.factura {
+  margin: auto;
+  width: 350px;
+  background-color: rgba(0 0 0 0.5);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.factura_detalle {
+  margin-top: 20px;
+  align-items: center;
+  color: rgb(14, 17, 19);
+  background-color: rgb(255, 255, 247);
+  border: solid 1px black;
+}
+
+.factura_show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+tr,
+td,
+th {
+  border: solid 1px black;
+  border-collapse: collapse;
+  color: rgb(10, 10, 10);
+}
+th {
+  background-color: bisque;
+}
+.item_container {
+  border-collapse: collapse;
+  width: 85%;
+  color: black;
+  padding: 5px 10px;
+}
+td,
+tr {
+  background-color: antiquewhite;
+}
+#close {
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.trash {
+  align-items: center;
+}
+
+@media screen and (min-width: 375px) {
+  .Header {
+    font-size: 15px;
+  }
+  .img {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+  }
+  .card_singles {
+    height: 330px;
+    width: 300px;
+  }
+  .lista {
+    align-items: center;
+    padding: 0;
+  }
+}
