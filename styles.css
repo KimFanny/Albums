@@ -9,12 +9,19 @@
   display: flex;
   justify-content: space-between;
   font-size: 20px;
-  border: solid 1px rgb(196, 123, 225);
+  border: solid 1px rgb(187, 89, 226);
   margin-top: 20px;
+  top: 10px;
   height: 120px;
   background-color: rgb(42, 42, 43);
   color: rgb(246, 246, 239);
   border-radius: 10px;
+  position: fixed;
+  /* left: 0; */
+  z-index: 1;
+  width: 90%;
+  /* padding: 0 50px; */
+  margin: 0 auto;
 }
 .container {
   margin: 0 auto;
@@ -23,6 +30,7 @@
 .title {
   text-align: center;
   align-items: center;
+  font-size: 70px;
 }
 .img {
   margin-left: 20px;
@@ -41,15 +49,25 @@
   height: 40px;
   width: 50px;
 }
-
+.nombre {
+  font-size: 1.2rem;
+}
 .card_singles {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   margin-top: 30px;
   height: 350px;
   width: 400px;
   border: solid 1px black;
   align-items: center;
+}
+.cointainername {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
 .img-album {
   height: 80px;
@@ -61,6 +79,7 @@
   padding: 10px;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 120px;
 }
 .nombre {
   padding-left: 20px;
@@ -69,10 +88,11 @@
 }
 .factura {
   margin: auto;
-  width: 350px;
-  background-color: rgba(0 0 0 0.5);
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
   flex-direction: column;
   display: flex;
+  align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
@@ -84,8 +104,12 @@
 }
 
 .factura_detalle {
-  margin-top: 20px;
+  padding: 10px 0;
+  width: 50%;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 20px;
   color: rgb(14, 17, 19);
   background-color: rgb(255, 255, 247);
   border: solid 1px black;
@@ -104,7 +128,8 @@ th {
   color: rgb(10, 10, 10);
 }
 th {
-  background-color: bisque;
+  background-color: rgba(15, 14, 14, 0.144);
+  height: 70px;
 }
 .item_container {
   border-collapse: collapse;
@@ -114,21 +139,35 @@ th {
 }
 td,
 tr {
-  background-color: antiquewhite;
+  background-color: white;
+  text-align: center;
 }
 #close {
   width: 20px;
   height: 20px;
   margin: 0 auto;
+  background-color: white;
+}
+.table {
+  width: 100%;
 }
 
 .trash {
   align-items: center;
 }
-
+.cardButton {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 375px) {
   .Header {
-    font-size: 15px;
+    font-size: 10px;
+  }
+  .title {
+    font-size: 30px;
   }
   .img {
     margin-top: 20px;
@@ -142,5 +181,8 @@ tr {
   .lista {
     align-items: center;
     padding: 0;
+  }
+  .factura_detalle {
+    width: 70%;
   }
 }

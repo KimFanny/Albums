@@ -41,6 +41,20 @@ const albums = [
     precios: 270,
     imagen: "theweekend.jpg",
   },
+  {
+    id: 7,
+    nombre: " Thriller",
+    Artista: "Michael Jackson ",
+    precios: 179,
+    imagen: "michael.jpg",
+  },
+  {
+    id: 8,
+    nombre: "15 Inolvidables ",
+    Artista: " Marco Antonio Solis ",
+    precios: 199,
+    imagen: "marco.jpg",
+  },
 ];
 
 const Cds = [];
@@ -56,11 +70,13 @@ document.addEventListener("DOMContentLoaded", () => {
   albums.forEach((album) => {
     muestra = `
     <div class="card_singles">
-      <h1 class="nombre">${album.nombre}</h1>
+    <div class = "cointainername"
+    <h2 class="nombre">${album.nombre}</h2>
+     </div>
       <img src="./imagenes/${album.imagen}" alt="album" class="img-album">
       <p>ARTISTA: ${album.Artista}</p>
       <p>Precio: ${album.precios}</p>
-      <div>
+      <div class="cardButton">
         <button type="button" class="btn_add" value="${album.id}">
         Agregar al carrito
         </button>
@@ -128,7 +144,7 @@ function mostrarCarrito() {
     contenido += `
     <tr>
     <td> Total: </td>
-    <td colspan = "2"> ${total}</td>
+    <td colspan = "3"> ${total}</td>
     </tr>
     </table>`;
   } else {
